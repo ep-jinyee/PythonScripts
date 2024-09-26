@@ -1,0 +1,177 @@
+@ip = 192.168.88.122
+@url = https://{{ip}}/api
+
+### GET API token
+POST https://{{ip}}/token
+Content-Type: application/json
+
+{
+    "payload": {
+        "username": "admin",
+        "password": "123456"
+    }
+}
+
+### Revoke API token
+GET https://{{ip}}/remove
+
+### Debug for system memory
+GET {{url}}/debug
+
+### API to get total LPR currently populated in system RAM
+### It might not reflect the up-to-date lpr in database
+GET {{url}}/lpr
+
+### API to get card number query by lpr
+GET {{url}}/lpr?car_plate=malaysia38
+
+### API to delete lpr
+DELETE {{url}}/lpr?car_plate=malaysia38
+
+### API to insert lpr-card into Edge
+POST {{url}}/lpr
+Content-Type: application/json
+
+{
+    "payload": [
+        {
+            "lpr": "wxq3411",
+            "card": "014402683"
+        },
+        {
+            "lpr": "jlr8",
+            "card": "123456785"
+        },
+        {
+            "lpr": "tcc5",
+            "card": "123456780"
+        },
+        {
+            "lpr": "qal4",
+            "card": "123456781"
+        },
+        {
+            "lpr": "wyp181",
+            "card": "123456782"
+        },
+        {
+            "lpr": "malaysia38",
+            "card": "123456783"
+        },
+        {
+            "lpr": "patriot1200",
+            "card": "123456784"
+        },
+        {
+            "lpr": "mak6",
+            "card": "0126049962"
+        },
+        {
+            "lpr": "TCC555",
+            "card": "0123456555"
+        },
+        {
+            "lpr": "ct13",
+            "card": "0131313131"
+        }
+    ]
+}
+
+### API to get general LCD display settings
+GET {{url}}/lpr/settings/lcd
+
+### API to set general LCD display settings
+POST {{url}}/lpr/settings/lcd
+Content-Type: application/json
+
+{
+    "payload": {
+        "speed": 4,
+        "brightness": 5,
+        "static_content_timeout": 6,
+        "static_content": [
+          "Welcome to EntryPass, Everyday is a Great Day",
+          "Welcome to EntryPass, Everyday is a Great Day",
+          "Welcome to Bricomp",
+          "Welcome to Bricomp"
+        ]
+    }
+}
+
+### API to retrieve HCB text settings by query against HCB text id
+GET {{url}}/lpr/settings/lcd/text?id=67
+
+### API to set HCB text settings
+POST {{url}}/lpr/settings/lcd/text
+Content-Type: application/json
+
+{
+    "payload": [
+        {
+            "hcb_txt_idx": 67,
+            "line1": "Ni @cp siapa?",
+            "line2": "&*(^%$#@!+_!",
+            "line3": " ",
+            "line4": " ",
+            "enabled": true
+        }
+    ]
+}
+
+### API to reset device
+### Desc: Restart EdgeLPR without erase settings
+POST {{url}}/sys/reset
+
+### API to cold reset device
+### Desc: All settings, except network settings will be erase
+POST {{url}}/sys/coldstart
+
+### API to factory reset device.
+### Desc: Upon factory reset, all the settings, including network settings will be erased
+POST {{url}}/sys/setdef
+
+### API to retrieve lpr.txt in EdgeLPR
+GET {{url}}/lpr/file
+
+### API to update lpr.txt in EdgeLPR
+POST {{url}}/lpr/file
+Content-Type: application/octet-stream
+
+< ./test/lpr.txt
+
+
+### API to update network settings
+POST {{url}}/network
+Content-Type: application/json
+
+{
+    "payload": {        
+        "ipv4": "192.168.88.125",
+        "mask": "255.255.255.0",
+        "gateway": "192.168.88.1",
+        "hcb2": [
+          "192.168.4.250",
+          "192.168.4.251"
+        ],
+        "dns": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ],
+        "hcb2hostname": "ephcb2lite.local",
+        "up": [
+          {
+            "protocol": "https",
+            "addr": "192.168.88.122",
+            "port": 0
+          },
+          {
+            "protocol": "https",
+            "addr": "192.168.88.122",
+            "port": 0
+          }
+        ]
+    }
+}
+
+### API to get network settings
+GET {{url}}/network
