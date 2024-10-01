@@ -1,7 +1,11 @@
+#! /usr/bin/python3
 import requests
 import random
 import string
+import argparse
 import json
+
+out_dir = 'lpr.txt'
 
 # Function to generate random Malaysian car plate numbers
 def generate_lpr():
@@ -23,6 +27,11 @@ def generate_payload(num_records=10000):
         data.append({"lpr": lpr, "card": card})
     return data
 
+# Function to append data to lpr.txt in bytes
+def append_to_file(car_plate, card_number):
+    with open(out_dir, 'ab') as f:  # 'ab' mode for appending in binary
+        f.write(car_plate.encode('utf-8').rjust(18, b'\xFF') + int(card_number).to_bytes(4, byteorder='big', signed=False))
+
 # Function to send data in batches of 10
 def send_data_to_api(endpoint_url, payload, batch_size=10):
     # Split data into batches of 10
@@ -34,14 +43,31 @@ def send_data_to_api(endpoint_url, payload, batch_size=10):
             # Handle response
             if response.status_code == 200:
                 print(f"Batch {i // batch_size + 1}: Success")
+                # Append car plates and card numbers to the file in bytes
+                for item in batch:
+                    append_to_file(item['lpr'], item['card'])
             else:
                 print(f"Batch {i // batch_size + 1}: Failed with status code {response.status_code}")
 
         except requests.RequestException as e:
             print(f"Batch {i // batch_size + 1}: Error occurred - {e}")
 
+def main():
+    parser = argparse.ArgumentParser(description="CLI tool to generate and send random LPR and card data to an API.")
+    
+    # Add arguments for API endpoint and number of records
+    parser.add_argument('--endpoint', type=str, help="API endpoint to send data", required=True)
+    parser.add_argument('--num_records', type=int, help="Number of random data records to generate", required=True)
+    parser.add_argument('--out_dir', type=int, help="Output directory of lpr.txt, default is same directory as where this program is invoked", required=False)
+
+    # Parse command-line arguments
+    args = parser.parse_args()
+
+    # Generate data and send to the API
+    data = generate_payload(args.num_records)
+    send_data_to_api(args.endpoint, data)
+
 # Example usage
 if __name__ == "__main__":
-    api_endpoint = "https://192.168.88.122/api/lpr"  # Replace with your actual API endpoint
-    data = generate_payload(10)  # Generate 10,000 data points
-    send_data_to_api(api_endpoint, data)
+    main()
+    
