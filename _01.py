@@ -30,7 +30,7 @@ def generate_payload(num_records=10000):
 # Function to append data to lpr.txt in bytes
 def append_to_file(car_plate, card_number):
     with open(out_dir, 'ab') as f:  # 'ab' mode for appending in binary
-        f.write(car_plate.encode('utf-8').rjust(18, b'\xFF') + int(card_number).to_bytes(4, byteorder='big', signed=False))
+        f.write(car_plate.encode('utf-8').rjust(18, b'\x30') + int(card_number).to_bytes(4, byteorder='big', signed=False))
 
 # Function to send data in batches of 10
 def send_data_to_api(endpoint_url, payload, batch_size=10):
