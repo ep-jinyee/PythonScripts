@@ -175,3 +175,6 @@ Content-Type: application/json
 
 ### API to get network settings
 GET {{url}}/network
+
+### Get LPR firmware version 
+https://{{edge_ip}}/api/lpr/settings/version
