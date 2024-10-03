@@ -65,4 +65,5 @@
 65. Draw AST
 66. Valid Car Plate
 67. Unknown Car Plate
-
+68. Door Security Off
+69. Door Security On
