@@ -136,6 +136,7 @@ GET {{url}}/lpr/file
 ### API to update lpr.txt in EdgeLPR
 POST {{url}}/lpr/file
 Content-Type: application/octet-stream
+EP-Filename: lpr.txt
 
 < ./test/lpr.txt
 
