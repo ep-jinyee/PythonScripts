@@ -3,14 +3,14 @@ import time
 
 def main():
     # Configure the serial port
-    port = '/dev/ttyUSB1'  # Adjust this to match your specific USB port
+    port = 'COM3'
     baud_rate = 9600  # Adjust based on your device's requirements
-    interval = 12  # Time between transmissions in seconds
+    interval = 8      # Time between transmissions in seconds
     car_plates = [
-        'ACB123',
-        'WQQ4595',
         'JLR8',
         'TCC555',
+        'ABC123',
+        'WQQ4595',
         'QAL4',
         'WYP181',
         'MALAYSIA38',
