@@ -4,6 +4,7 @@ import struct
 def convert_csv_to_lpr(csv_filename, output_filename):
     with open(csv_filename, 'r') as csv_file, open(output_filename, 'wb') as output_file:
         reader = csv.reader(csv_file)
+        rows_written = 0
         
         for row in reader:
             car_plate, card_no = row
@@ -21,6 +22,13 @@ def convert_csv_to_lpr(csv_filename, output_filename):
             # Write to the output file
             output_file.write(car_plate_bytes)
             output_file.write(card_bytes)
+
+            rows_written += 1
+
+        rows_needed = 10000 - rows_written
+
+        for _ in range(rows_needed):
+            output_file.write(b'\xFF' * 24)
 
 # Example usage
 convert_csv_to_lpr('lpr.csv', 'lpr.txt')
