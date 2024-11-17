@@ -5,7 +5,7 @@ def main():
     # Configure the serial port
     port = 'COM3'
     baud_rate = 9600  # Adjust based on your device's requirements
-    interval = 8      # Time between transmissions in seconds
+    interval = 1      # Time between transmissions in seconds
     car_plates = [
         'JLR8',
         'TCC555',
@@ -17,6 +17,8 @@ def main():
         'PATRIOT1200',
         'MALAYSIA9988',
         'ANBU99W',
+        "_NONE_",
+        "No_Plate",
         'HEHE99',
         'CHAN123',
         'BENSON456'
@@ -35,6 +37,7 @@ def main():
                 footer = bytes([0x00, 0x00, 0xaf])
 
                 data = header + bytes([plate_length]) + bytes([0x01, 0x0A, 0x01, 0x00]) + plate + footer
+                data = data + (header + bytes([plate_length]) + bytes([0x01, 0x0A, 0x01, 0x00]) + plate + footer)
 
                 # Send the data
                 ser.write(data)

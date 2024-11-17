@@ -25,10 +25,10 @@ def convert_csv_to_lpr(csv_filename, output_filename):
 
             rows_written += 1
 
-        rows_needed = 10000 - rows_written
+        # rows_needed = 10000 - rows_written
 
-        for _ in range(rows_needed):
-            output_file.write(b'\xFF' * 24)
+        # for _ in range(rows_needed):
+            # output_file.write(b'\xFF' * 24)
 
 # Example usage
-convert_csv_to_lpr('lpr.csv', 'lpr.txt')
+convert_csv_to_lpr('lpr-10000.csv', 'lpr.txt')
