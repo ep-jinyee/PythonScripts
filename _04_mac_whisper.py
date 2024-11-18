@@ -105,6 +105,7 @@ def main():
     try:
         send_frame(ifname, dstmac, ethtype, payload)
     except Exception as error:
+        print(error)
         sys.exit(1)
 
     # Start webserver with timeout
