@@ -2,7 +2,7 @@ import csv
 import requests
 
 # Replace with your actual endpoint URL
-endpoint_url = "https://192.168.88.122/api/lpr"
+endpoint_url = "https://192.168.88.247/api/lpr"
 
 def send_api_request(car_plate, card_number):
     # Construct the payload for the POST request

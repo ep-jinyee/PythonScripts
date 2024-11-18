@@ -3,7 +3,7 @@ import time
 
 def main():
     # Configure the serial port
-    port = 'COM3'
+    port = 'COM5'
     baud_rate = 9600  # Adjust based on your device's requirements
     interval = 1      # Time between transmissions in seconds
     car_plates = [
