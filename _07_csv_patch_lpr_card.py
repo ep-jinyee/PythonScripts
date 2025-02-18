@@ -2,8 +2,8 @@ import csv
 import requests
 
 # Configuration
-CSV_FILE = "car_plate_data.csv"  # Replace with your actual CSV file path
-API_ENDPOINT = "https://192.168.88.124/api/lpr"  # Replace with your endpoint URL
+CSV_FILE = "lpr-9988.csv"  # Replace with your actual CSV file path
+API_ENDPOINT = "https://192.168.88.247/api/lpr"  # Replace with your endpoint URL
 CARD_NUMBER = "1230000000"
 
 def send_patch_request(car_plate):
@@ -15,7 +15,7 @@ def send_patch_request(car_plate):
         }
     }
     try:
-        response = requests.patch(API_ENDPOINT, json=payload)
+        response = requests.patch(API_ENDPOINT, json=payload, verify=False)
         if response.status_code == 200:
             print(f"Successfully updated card number for {car_plate}.")
         else:

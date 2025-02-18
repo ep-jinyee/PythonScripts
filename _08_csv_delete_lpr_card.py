@@ -2,14 +2,14 @@ import csv
 import requests
 
 # Configuration
-CSV_FILE = "car_plate_data.csv"  # Replace with your actual CSV file path
+CSV_FILE = "lpr-9988.csv"  # Replace with your actual CSV file path
 API_ENDPOINT = "https://192.168.88.247/api/lpr"  # Replace with your endpoint URL
 
 def send_delete_request(car_plate):
     """Sends a DELETE request with the given car plate as a query parameter."""
     params = {"car_plate": car_plate}
     try:
-        response = requests.delete(API_ENDPOINT, params=params)
+        response = requests.delete(API_ENDPOINT, params=params, verify=False)
         if response.status_code == 200:
             print(f"Successfully deleted entry for {car_plate}.")
         else:

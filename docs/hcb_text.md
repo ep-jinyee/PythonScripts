@@ -1,3 +1,7 @@
+## HCB Event Text
+
+Below are list of event with their associated index returned by HCB controller to EDGELPR
+
 1. 
 2. Invalid
 3. Invalid Pin

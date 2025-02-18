@@ -31,4 +31,4 @@ def convert_csv_to_lpr(csv_filename, output_filename):
             # output_file.write(b'\xFF' * 24)
 
 # Example usage
-convert_csv_to_lpr('lpr-10000.csv', 'lpr.txt')
+convert_csv_to_lpr('resources\\skyvouge-10k.csv', 'results\\lpr.txt')
