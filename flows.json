@@ -1,0 +1,2286 @@
+[
+    {
+        "id": "bdaeecd8b1c1e570",
+        "type": "tab",
+        "label": "EdgeLPR_Test_Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "af5e52f354ea1ba6",
+        "type": "subflow",
+        "name": "Login API Subflow",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 100,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "67264aa201399618"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1180,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "802d89a7464e5536",
+                        "port": 0
+                    },
+                    {
+                        "id": "4339086df8043d2d",
+                        "port": 2
+                    },
+                    {
+                        "id": "b3e80a0b7f4c4a89",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d025f06b5c006adf",
+        "type": "group",
+        "z": "bdaeecd8b1c1e570",
+        "name": "Auth API Test Flow",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "c5079382051294c5",
+            "a34cd4f9636b3a12",
+            "8bf8a4f0737c6b1e",
+            "c2f7c5151b794684",
+            "d06207cee9d979b5",
+            "cb0a97467a1d392e",
+            "5de828a893377677",
+            "6a831e67fc551eae",
+            "1e2560163fb17933",
+            "aa291f36fa02b814",
+            "4e83c025341609b8",
+            "d6a00856f5d581bd"
+        ],
+        "x": 274,
+        "y": 39,
+        "w": 1012,
+        "h": 262
+    },
+    {
+        "id": "6e18a2457bf87083",
+        "type": "group",
+        "z": "bdaeecd8b1c1e570",
+        "name": "Discovery mode test",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "efaaccae4282e5dc",
+            "84c4f5747fea804d",
+            "01c566edaa016768"
+        ],
+        "x": 274,
+        "y": 339,
+        "w": 712,
+        "h": 82
+    },
+    {
+        "id": "bb7cba601e2b94d3",
+        "type": "group",
+        "z": "bdaeecd8b1c1e570",
+        "name": "Restart/Cold Start/Factory Default API Test",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "046321e5a096e333",
+            "04db7833f3722cb1",
+            "3e08a79929b0959d",
+            "91cdb21c612236a2",
+            "715b25b94ceed7a9",
+            "84fb43d29a404b26",
+            "17843e8ea9908398",
+            "196a386121fb136c",
+            "b4de9f15a2a687eb",
+            "5fc266b6232d5925",
+            "a626d3fb2768ca7b",
+            "3682e2649cf9658f",
+            "cad452f4bfe482c8",
+            "a89eef89c07d0492",
+            "f9676ee070345bc0",
+            "a9cc09ad22659570",
+            "b59379e680c0ba66",
+            "ef45110240c05ba7",
+            "e0c5291d6b9e69be",
+            "d948b57751918860",
+            "cfbd51547ac20458",
+            "afad3efbdae507d4",
+            "1bb285aa5bc798d3",
+            "761822df2e782df8",
+            "d04ead5a1101a363",
+            "1a98237f734ca15b"
+        ],
+        "x": 274,
+        "y": 459,
+        "w": 1232,
+        "h": 562
+    },
+    {
+        "id": "743877d97f934df1",
+        "type": "group",
+        "z": "bdaeecd8b1c1e570",
+        "name": "System Info API",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "e1cbd83ce19d0004",
+            "88735dc83d6a24e9",
+            "1dda8687859b5b15",
+            "9825762df996fb56",
+            "b4f7427902440658",
+            "2e684d4523ef4361",
+            "d473d03ed524388a",
+            "98b9143b6c06be43",
+            "3fb4e7832968a744",
+            "d4f8bae8cdead6f2"
+        ],
+        "x": 274,
+        "y": 1079,
+        "w": 1012,
+        "h": 242
+    },
+    {
+        "id": "0871b54141e14eee",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "EP Production",
+                "default": "#4B7930",
+                "baseColor": "#d17b1a",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#d17b1a",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#d17b1a",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#e9a04e",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#d17b1a",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dashboard_tab",
+        "type": "ui_tab",
+        "name": "EdgeLPR Peripheral Test V1.0",
+        "icon": "dashboard",
+        "order": 6,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "528156a49b5548aa",
+        "type": "ui_group",
+        "name": "STSafe",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8d3438c5235320af",
+        "type": "ui_group",
+        "name": "Production Information",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "483bec8167b630d5",
+        "type": "ui_group",
+        "name": "Test Result",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0ad39033d6233170",
+        "type": "ui_group",
+        "name": "Console Display",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 27,
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "21e5e71e02eacbf8",
+        "type": "ui_group",
+        "name": "",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "64b07586.8c0c44",
+        "type": "ui_group",
+        "name": "1.0 LED Test",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "40",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7ba0a46afd6da0cf",
+        "type": "ui_group",
+        "name": "3.0 Heart LED Test",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "40",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f3281e4fd7cdc767",
+        "type": "ui_group",
+        "name": "2.0 Buzzer Test",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "40",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "943fb74bb8d36bab",
+        "type": "ui_group",
+        "name": "4.0 DIP Switch",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "50",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f80555eb69e3595c",
+        "type": "ui_group",
+        "name": "5.0 Cold Button",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "50",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b26d572a7fc334de",
+        "type": "ui_group",
+        "name": "6.0 Reset Button",
+        "tab": "",
+        "order": 6,
+        "disp": true,
+        "width": "40",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9433e9030bfe05b7",
+        "type": "ui_group",
+        "name": "RS485 UART",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "385803a95f11e42f",
+        "type": "ui_group",
+        "name": "RTC",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4de8069bee59586d",
+        "type": "ui_group",
+        "name": "Relay",
+        "tab": "",
+        "order": 7,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "990bab50ee4982a6",
+        "type": "ui_group",
+        "name": "ADC",
+        "tab": "",
+        "order": 6,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "76c534f5d71c2f59",
+        "type": "ui_group",
+        "name": "Power Test Point",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4269b608ecaea92a",
+        "type": "ui_group",
+        "name": "Memory Test",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "661c2a226580b96f",
+        "type": "ui_group",
+        "name": "eFuse",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dashboard_group",
+        "type": "ui_group",
+        "name": "Edge LPR Production Testing Dashboard",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0720d67c6aebda3e",
+        "type": "ui_group",
+        "name": "UART-RS485",
+        "tab": "dashboard_tab",
+        "order": 8,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d922fd37b798ff9d",
+        "type": "ui_group",
+        "name": "ETHERNET (PING TEST)",
+        "tab": "dashboard_tab",
+        "order": 9,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d69cc553570a20e7",
+        "type": "ui_group",
+        "d": true,
+        "name": "Manual Testing",
+        "tab": "dashboard_tab",
+        "order": 2,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2074fa494ca81334",
+        "type": "ui_group",
+        "name": "Heart LED",
+        "tab": "dashboard_tab",
+        "order": 7,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3fcc5c95d5205a57",
+        "type": "ui_group",
+        "name": "COLD Button",
+        "tab": "dashboard_tab",
+        "order": 5,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5fd2c0ef3ccada2d",
+        "type": "ui_group",
+        "name": "Operator Information",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "94de0de418a97fbf",
+        "type": "ui_group",
+        "name": "DIP Switch Address",
+        "tab": "dashboard_tab",
+        "order": 6,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "77a181a63b828c2c",
+        "type": "ui_group",
+        "name": "RESET Button",
+        "tab": "dashboard_tab",
+        "order": 4,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9633db8eeca6088f",
+        "type": "ui_group",
+        "name": "OTA",
+        "tab": "dashboard_tab",
+        "order": 12,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "be256d49a0e26c5f",
+        "type": "ui_group",
+        "name": "MAC & Serial Injection and Validation",
+        "tab": "dashboard_tab",
+        "order": 11,
+        "disp": true,
+        "width": 27,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d4c64bfebc596046",
+        "type": "ui_group",
+        "d": true,
+        "name": "Production Information",
+        "tab": "dashboard_tab",
+        "order": 10,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1bfd15367b7a103f",
+        "type": "serial-port",
+        "serialport": "COM6",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "4403cab29f121fcd",
+        "type": "serial-port",
+        "serialport": "COM5",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "7f405e9aaecde556",
+        "type": "serial-port",
+        "name": "W2O/8IO",
+        "serialport": "COM12",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "",
+        "bin": "bin",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "serialConfigID",
+        "type": "serial-port",
+        "name": "COM7",
+        "serialport": "COM2",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "newline": "20",
+        "bin": "bin",
+        "out": "time",
+        "addchar": "",
+        "responsetimeout": ""
+    },
+    {
+        "id": "71d7c1d362a26d51",
+        "type": "serial-port",
+        "serialport": "COM6",
+        "serialbaud": "115200",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "waitfor": "",
+        "dtr": "none",
+        "rts": "none",
+        "cts": "none",
+        "dsr": "none",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": "",
+        "responsetimeout": "10000"
+    },
+    {
+        "id": "3d3e7fe2a2783618",
+        "type": "ui_group",
+        "name": "Overall Result",
+        "tab": "dashboard_tab",
+        "order": 13,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": "Overall Result"
+    },
+    {
+        "id": "b48ff3f2123d28da",
+        "type": "ui_group",
+        "name": "Hidden Button",
+        "tab": "dashboard_tab",
+        "order": 14,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c07e417f7cc0c88e",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "dashboard_tab",
+        "order": 15,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "43fd5404f8f3ac82",
+        "type": "ui_group",
+        "name": "Capacitor Value GND & ETH",
+        "tab": "dashboard_tab",
+        "order": 3,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2ae5ce3dad15a87f",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "894d1419f0104a72",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "9aad3a6c032f24aa",
+        "type": "ui_tab",
+        "name": "Tab 1",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "dbea70794a601e29",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "order": 3
+    },
+    {
+        "id": "673c2fa33652d265",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "2ae5ce3dad15a87f",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "c05919beaff68155",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "894d1419f0104a72",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "bfda75191a5fd3ea",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "9aad3a6c032f24aa",
+        "order": 1,
+        "disp": true,
+        "width": 6,
+        "collapse": false
+    },
+    {
+        "id": "a7dfed11c03583b8",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "dbea70794a601e29",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "b70aa90c05ebbbe0",
+        "type": "global-config",
+        "name": "global-config",
+        "env": [
+            {
+                "name": "HTTP_METHOD",
+                "value": "https",
+                "type": "str"
+            },
+            {
+                "name": "HTTP_URL",
+                "value": "192.168.4.102",
+                "type": "str"
+            },
+            {
+                "name": "EDGE_DISCOVERY_PORT",
+                "value": "2020",
+                "type": "str"
+            }
+        ]
+    },
+    {
+        "id": "03506b15d1f28241",
+        "type": "ui_tab",
+        "name": "EdgePLUS Peripheral Test",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f430de67e8396132",
+        "type": "ui_group",
+        "name": "OTA",
+        "tab": "03506b15d1f28241",
+        "order": 27,
+        "disp": true,
+        "width": "27",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "67264aa201399618",
+        "type": "http request",
+        "z": "af5e52f354ea1ba6",
+        "name": "Login and Get Token",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.101/token",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "other",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": ""
+            }
+        ],
+        "x": 280,
+        "y": 80,
+        "wires": [
+            [
+                "4339086df8043d2d"
+            ]
+        ]
+    },
+    {
+        "id": "4339086df8043d2d",
+        "type": "switch",
+        "z": "af5e52f354ea1ba6",
+        "name": "Check return",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "500",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 530,
+        "y": 80,
+        "wires": [
+            [
+                "3e5561d1a8a89021"
+            ],
+            [
+                "e11bc10a427e0b08"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "3e5561d1a8a89021",
+        "type": "function",
+        "z": "af5e52f354ea1ba6",
+        "name": "Retrieve token",
+        "func": "const cookieHeader = msg.headers['set-cookie'];\n\nif (cookieHeader)\n    flow.set(\"authCookie\", cookieHeader[0]); // Store the first cookie\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 60,
+        "wires": [
+            [
+                "802d89a7464e5536"
+            ]
+        ]
+    },
+    {
+        "id": "802d89a7464e5536",
+        "type": "function",
+        "z": "af5e52f354ea1ba6",
+        "name": "Set token to header cookie",
+        "func": "const cookie = flow.get(\"authCookie\"); // Retrieve the stored cookie\nif (cookie) {\n    msg.headers = {\n        \"Cookie\": cookie,\n    };\n}\nmsg.rejectUnauthorized = false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "078f2e3940dc54de",
+        "type": "http request",
+        "z": "af5e52f354ea1ba6",
+        "name": "Logout",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.101/remove",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 510,
+        "y": 160,
+        "wires": [
+            [
+                "b3e80a0b7f4c4a89"
+            ]
+        ]
+    },
+    {
+        "id": "b3e80a0b7f4c4a89",
+        "type": "switch",
+        "z": "af5e52f354ea1ba6",
+        "name": "Check return",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [],
+            [
+                "5994c5704a54eb6d"
+            ]
+        ]
+    },
+    {
+        "id": "5994c5704a54eb6d",
+        "type": "change",
+        "z": "af5e52f354ea1ba6",
+        "name": "Clear token",
+        "rules": [
+            {
+                "t": "set",
+                "p": "authCookie",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "67264aa201399618"
+            ]
+        ]
+    },
+    {
+        "id": "e11bc10a427e0b08",
+        "type": "function",
+        "z": "af5e52f354ea1ba6",
+        "name": "Set token to header cookie",
+        "func": "const cookie = flow.get(\"authCookie\"); // Retrieve the stored cookie\nif (cookie) {\n    msg.headers = {\n        \"Cookie\": cookie,\n    };\n}\nmsg.rejectUnauthorized = false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 160,
+        "wires": [
+            [
+                "078f2e3940dc54de"
+            ]
+        ]
+    },
+    {
+        "id": "c5079382051294c5",
+        "type": "inject",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "rejectUnauthorized",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 100,
+        "wires": [
+            [
+                "d6a00856f5d581bd"
+            ]
+        ]
+    },
+    {
+        "id": "a34cd4f9636b3a12",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "Call GET /api/network",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.101/api/network",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 640,
+        "y": 180,
+        "wires": [
+            [
+                "8bf8a4f0737c6b1e"
+            ]
+        ]
+    },
+    {
+        "id": "8bf8a4f0737c6b1e",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "Check return",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 180,
+        "wires": [
+            [
+                "d06207cee9d979b5"
+            ],
+            [
+                "c2f7c5151b794684",
+                "cb0a97467a1d392e"
+            ]
+        ]
+    },
+    {
+        "id": "d06207cee9d979b5",
+        "type": "debug",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "c2f7c5151b794684",
+        "type": "debug",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "cb0a97467a1d392e",
+        "type": "delay",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "Wait token expire",
+        "pauseType": "delay",
+        "timeout": "60",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 260,
+        "wires": [
+            [
+                "5de828a893377677"
+            ]
+        ]
+    },
+    {
+        "id": "5de828a893377677",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "Call GET /api/network",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.101/api/network",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 640,
+        "y": 260,
+        "wires": [
+            [
+                "6a831e67fc551eae"
+            ]
+        ]
+    },
+    {
+        "id": "6a831e67fc551eae",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "Check return",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "401",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 260,
+        "wires": [
+            [
+                "d06207cee9d979b5"
+            ],
+            [
+                "1e2560163fb17933"
+            ]
+        ]
+    },
+    {
+        "id": "1e2560163fb17933",
+        "type": "debug",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "efaaccae4282e5dc",
+        "type": "inject",
+        "z": "bdaeecd8b1c1e570",
+        "g": "6e18a2457bf87083",
+        "name": "Inject discovery payload",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"model\":\"EDGELPR\",\"mac\":\"88:97:DF:FF:FF:FF\",\"ipv4\":\"192.168.4.155\",\"subnet\":\"255.255.255.0\",\"dns\":[\"8.8.8.8\",\"8.8.4.4\"],\"gateway\":\"192.168.4.1\",\"arp_resp\":\"192.168.4.253\"}",
+        "payloadType": "str",
+        "x": 420,
+        "y": 380,
+        "wires": [
+            [
+                "84c4f5747fea804d"
+            ]
+        ]
+    },
+    {
+        "id": "84c4f5747fea804d",
+        "type": "tcp request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "6e18a2457bf87083",
+        "name": "",
+        "server": "192.168.4.100",
+        "port": "2020",
+        "out": "immed",
+        "ret": "string",
+        "splitc": " ",
+        "newline": "",
+        "trim": false,
+        "tls": "",
+        "x": 670,
+        "y": 380,
+        "wires": [
+            [
+                "01c566edaa016768"
+            ]
+        ]
+    },
+    {
+        "id": "01c566edaa016768",
+        "type": "debug",
+        "z": "bdaeecd8b1c1e570",
+        "g": "6e18a2457bf87083",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "aa291f36fa02b814",
+        "type": "subflow:af5e52f354ea1ba6",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "",
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "a34cd4f9636b3a12"
+            ]
+        ]
+    },
+    {
+        "id": "4e83c025341609b8",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "Check return",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "401",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 100,
+        "wires": [
+            [
+                "d06207cee9d979b5"
+            ],
+            [
+                "aa291f36fa02b814"
+            ]
+        ]
+    },
+    {
+        "id": "d6a00856f5d581bd",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "d025f06b5c006adf",
+        "name": "Call GET /api/network",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.101/api/network",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 560,
+        "y": 100,
+        "wires": [
+            [
+                "4e83c025341609b8"
+            ]
+        ]
+    },
+    {
+        "id": "046321e5a096e333",
+        "type": "inject",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 380,
+        "y": 500,
+        "wires": [
+            [
+                "04db7833f3722cb1"
+            ]
+        ]
+    },
+    {
+        "id": "04db7833f3722cb1",
+        "type": "subflow:af5e52f354ea1ba6",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "",
+        "x": 670,
+        "y": 500,
+        "wires": [
+            [
+                "3e08a79929b0959d"
+            ]
+        ]
+    },
+    {
+        "id": "3e08a79929b0959d",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Restart Device",
+        "method": "POST",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.155/api/sys/reset",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 880,
+        "y": 500,
+        "wires": [
+            [
+                "91cdb21c612236a2"
+            ]
+        ]
+    },
+    {
+        "id": "91cdb21c612236a2",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Check return",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1070,
+        "y": 500,
+        "wires": [
+            [
+                "715b25b94ceed7a9"
+            ],
+            [
+                "84fb43d29a404b26"
+            ]
+        ]
+    },
+    {
+        "id": "715b25b94ceed7a9",
+        "type": "debug",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "84fb43d29a404b26",
+        "type": "subflow:af5e52f354ea1ba6",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "",
+        "x": 670,
+        "y": 580,
+        "wires": [
+            [
+                "17843e8ea9908398"
+            ]
+        ]
+    },
+    {
+        "id": "17843e8ea9908398",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Change VZ LED Settings",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 910,
+        "y": 580,
+        "wires": [
+            [
+                "5fc266b6232d5925"
+            ]
+        ]
+    },
+    {
+        "id": "196a386121fb136c",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Change HCB Event 1",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 900,
+        "y": 660,
+        "wires": [
+            [
+                "cad452f4bfe482c8"
+            ]
+        ]
+    },
+    {
+        "id": "b4de9f15a2a687eb",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Add cards",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 860,
+        "y": 740,
+        "wires": [
+            [
+                "a9cc09ad22659570"
+            ]
+        ]
+    },
+    {
+        "id": "5fc266b6232d5925",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Check return",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1130,
+        "y": 580,
+        "wires": [
+            [
+                "715b25b94ceed7a9"
+            ],
+            [
+                "a626d3fb2768ca7b"
+            ]
+        ]
+    },
+    {
+        "id": "a626d3fb2768ca7b",
+        "type": "function",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Retrieve token",
+        "func": "const cookieHeader = msg.headers['set-cookie'];\n\nif (cookieHeader)\n    flow.set(\"authCookie\", cookieHeader[0]); // Store the first cookie\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 660,
+        "wires": [
+            [
+                "3682e2649cf9658f"
+            ]
+        ]
+    },
+    {
+        "id": "3682e2649cf9658f",
+        "type": "function",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Set token to header cookie",
+        "func": "const cookie = flow.get(\"authCookie\"); // Retrieve the stored cookie\nif (cookie) {\n    msg.headers = {\n        \"Cookie\": cookie,\n    };\n}\nmsg.rejectUnauthorized = false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 660,
+        "wires": [
+            [
+                "196a386121fb136c"
+            ]
+        ]
+    },
+    {
+        "id": "cad452f4bfe482c8",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Check return",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1110,
+        "y": 660,
+        "wires": [
+            [
+                "715b25b94ceed7a9"
+            ],
+            [
+                "f9676ee070345bc0"
+            ]
+        ]
+    },
+    {
+        "id": "a89eef89c07d0492",
+        "type": "function",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Set token to header cookie",
+        "func": "const cookie = flow.get(\"authCookie\"); // Retrieve the stored cookie\nif (cookie) {\n    msg.headers = {\n        \"Cookie\": cookie,\n    };\n}\nmsg.rejectUnauthorized = false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 740,
+        "wires": [
+            [
+                "b4de9f15a2a687eb"
+            ]
+        ]
+    },
+    {
+        "id": "f9676ee070345bc0",
+        "type": "function",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Retrieve token",
+        "func": "const cookieHeader = msg.headers['set-cookie'];\n\nif (cookieHeader)\n    flow.set(\"authCookie\", cookieHeader[0]); // Store the first cookie\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 740,
+        "wires": [
+            [
+                "a89eef89c07d0492"
+            ]
+        ]
+    },
+    {
+        "id": "a9cc09ad22659570",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Check return",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1110,
+        "y": 740,
+        "wires": [
+            [
+                "715b25b94ceed7a9"
+            ],
+            [
+                "e0c5291d6b9e69be"
+            ]
+        ]
+    },
+    {
+        "id": "b59379e680c0ba66",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Coldstart Device",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 880,
+        "y": 820,
+        "wires": [
+            [
+                "d948b57751918860"
+            ]
+        ]
+    },
+    {
+        "id": "ef45110240c05ba7",
+        "type": "function",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Set token to header cookie",
+        "func": "const cookie = flow.get(\"authCookie\"); // Retrieve the stored cookie\nif (cookie) {\n    msg.headers = {\n        \"Cookie\": cookie,\n    };\n}\nmsg.rejectUnauthorized = false;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 640,
+        "y": 820,
+        "wires": [
+            [
+                "b59379e680c0ba66"
+            ]
+        ]
+    },
+    {
+        "id": "e0c5291d6b9e69be",
+        "type": "function",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Retrieve token",
+        "func": "const cookieHeader = msg.headers['set-cookie'];\n\nif (cookieHeader)\n    flow.set(\"authCookie\", cookieHeader[0]); // Store the first cookie\n\nreturn msg",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 820,
+        "wires": [
+            [
+                "ef45110240c05ba7"
+            ]
+        ]
+    },
+    {
+        "id": "d948b57751918860",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Check return",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1110,
+        "y": 820,
+        "wires": [
+            [
+                "715b25b94ceed7a9"
+            ],
+            [
+                "cfbd51547ac20458"
+            ]
+        ]
+    },
+    {
+        "id": "cfbd51547ac20458",
+        "type": "subflow:af5e52f354ea1ba6",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "",
+        "x": 670,
+        "y": 900,
+        "wires": [
+            [
+                "afad3efbdae507d4"
+            ]
+        ]
+    },
+    {
+        "id": "afad3efbdae507d4",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Factory default",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "http://192.168.4.101/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 880,
+        "y": 900,
+        "wires": [
+            [
+                "1bb285aa5bc798d3"
+            ]
+        ]
+    },
+    {
+        "id": "1bb285aa5bc798d3",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Check return",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "200",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1110,
+        "y": 900,
+        "wires": [
+            [
+                "715b25b94ceed7a9"
+            ],
+            [
+                "761822df2e782df8"
+            ]
+        ]
+    },
+    {
+        "id": "761822df2e782df8",
+        "type": "delay",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 640,
+        "y": 980,
+        "wires": [
+            [
+                "1a98237f734ca15b"
+            ]
+        ]
+    },
+    {
+        "id": "d04ead5a1101a363",
+        "type": "tcp request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "",
+        "server": "192.168.4.100",
+        "port": "2020",
+        "out": "immed",
+        "ret": "buffer",
+        "splitc": " ",
+        "newline": "",
+        "trim": false,
+        "tls": "",
+        "x": 1090,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a98237f734ca15b",
+        "type": "change",
+        "z": "bdaeecd8b1c1e570",
+        "g": "bb7cba601e2b94d3",
+        "name": "Set discovery payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"model\":\"EDGELPR\",\"mac\":\"88:97:DF:FF:FF:FF\",\"ipv4\":\"192.168.4.155\",\"subnet\":\"255.255.255.0\",\"dns\":[\"8.8.8.8\",\"8.8.4.4\"],\"gateway\":\"192.168.4.1\",\"arp_resp\":\"192.168.4.253\"}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 840,
+        "y": 980,
+        "wires": [
+            [
+                "d04ead5a1101a363"
+            ]
+        ]
+    },
+    {
+        "id": "e1cbd83ce19d0004",
+        "type": "inject",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "Start",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "rejectUnauthorized",
+                "v": "false",
+                "vt": "bool"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 370,
+        "y": 1120,
+        "wires": [
+            [
+                "d473d03ed524388a"
+            ]
+        ]
+    },
+    {
+        "id": "88735dc83d6a24e9",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "Call GET /api/hardware",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.101/api/network",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 790,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1dda8687859b5b15",
+        "type": "delay",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "Wait token expire",
+        "pauseType": "delay",
+        "timeout": "60",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 410,
+        "y": 1280,
+        "wires": [
+            [
+                "9825762df996fb56"
+            ]
+        ]
+    },
+    {
+        "id": "9825762df996fb56",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "Call GET /api/network",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.101/api/network",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 640,
+        "y": 1280,
+        "wires": [
+            [
+                "b4f7427902440658"
+            ]
+        ]
+    },
+    {
+        "id": "b4f7427902440658",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "Check return",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "401",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 850,
+        "y": 1280,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "2e684d4523ef4361",
+        "type": "debug",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1180,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "d473d03ed524388a",
+        "type": "subflow:af5e52f354ea1ba6",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "",
+        "x": 550,
+        "y": 1120,
+        "wires": [
+            [
+                "3fb4e7832968a744"
+            ]
+        ]
+    },
+    {
+        "id": "98b9143b6c06be43",
+        "type": "switch",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "Check return",
+        "property": "statusCode",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "else"
+            },
+            {
+                "t": "eq",
+                "v": "401",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 410,
+        "y": 1200,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "3fb4e7832968a744",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "Call GET /api/network",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.101/api/network",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 780,
+        "y": 1120,
+        "wires": [
+            [
+                "98b9143b6c06be43"
+            ]
+        ]
+    },
+    {
+        "id": "d4f8bae8cdead6f2",
+        "type": "http request",
+        "z": "bdaeecd8b1c1e570",
+        "g": "743877d97f934df1",
+        "name": "Call GET /api/hardware",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://192.168.4.101/api/network",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 790,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    }
+]
