@@ -2,7 +2,7 @@ import csv
 import requests
 
 # Replace with your actual endpoint URL
-endpoint_url = "https://192.168.4.101/api/lpr"
+endpoint_url = "https://192.168.4.155/api/lpr"
 
 def send_api_request(car_plate, card_number):
     # Construct the payload for the POST request
@@ -61,8 +61,8 @@ def process_csv(csv_file):
             counter = counter + 1
 
             # Do halfway so skip those already done
-            if counter < 6960:
-               continue 
+            # if counter < 6960:
+            #    continue 
 
             if len(row) >= 2:  # Ensure there are at least two columns in the row
                 car_plate.append(row[0].strip())
@@ -78,5 +78,5 @@ def process_csv(csv_file):
 
 if __name__ == "__main__":
     # Replace 'your_file.csv' with your actual CSV file path
-    csv_file_path = "resources\\skyvouge-10k.csv"
+    csv_file_path = "resources/skyvouge-10k.csv"
     process_csv(csv_file_path)

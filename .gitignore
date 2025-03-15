@@ -3,5 +3,11 @@ Scripts
 pyvenv.cfg
 share
 ./lpr.txt
-results
 artifacts
+results
+dist
+bin
+build
+lib
+lib64
+include
